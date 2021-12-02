@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import repos from '@/components/data.js'
+
 // Fetch data from an API
 // const response = await fetch('https://open-source-info-api.herokuapp.com/api/v1/orgs/guidesmiths/repos')
 //   .then(response => response.json())
