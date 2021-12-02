@@ -11,6 +11,7 @@
     "test:e2e:ci": "start-server-and-test preview http://127.0.0.1:5050/ 'cypress run'"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.3.4",
     "vue": "^3.2.22",
     "vue-router": "^4.0.12"
   },
