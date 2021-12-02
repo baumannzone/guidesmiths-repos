@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref } from 'vue'
+import { ref } from 'vue'
 import repos from '@/components/data.js'
 // Fetch data from an API
 // const response = await fetch('https://open-source-info-api.herokuapp.com/api/v1/orgs/guidesmiths/repos')
@@ -42,7 +42,7 @@ const onChange = () => {
             <p class="text-xl text-gray-500">We are open source</p>
           </div>
 
-          <div class="grid grid-cols-2 gap-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <div
                 class="relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pink-600 focus-within:border-pink-600"
@@ -57,13 +57,13 @@ const onChange = () => {
                   id="search"
                   v-model="searchText"
                   class="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm"
-                  placeholder="Search by name"
+                  placeholder="Search by name or description"
                   @input="onChange"
                 />
               </div>
             </div>
             <div class="flex items-center justify-end">
-              <p class="text-gray-500 text-xl font-medium">Showing {{ filteredRepos.length }} repos</p>
+              <p class="text-gray-500 text-xl">Showing {{ filteredRepos.length }} repos</p>
             </div>
           </div>
 
